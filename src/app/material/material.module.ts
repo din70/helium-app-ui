@@ -5,8 +5,12 @@ import {
   MatInputModule,
   MatCardModule,
   MatButtonModule,
-  MatIconModule
+  MatIconModule,
 } from '@angular/material';
+import { FlexLayoutModule } from '@angular/flex-layout';
+import { MatToolbarModule } from '@angular/material/toolbar';
+import { MatSidenavModule } from '@angular/material/sidenav';
+import { MatListModule } from '@angular/material/list';
 import {FormsModule, ReactiveFormsModule} from '@angular/forms';
 @NgModule({
   declarations: [],
@@ -16,14 +20,21 @@ import {FormsModule, ReactiveFormsModule} from '@angular/forms';
     MatInputModule,
     MatCardModule,
     MatButtonModule,
-    MatIconModule
+    MatIconModule,MatToolbarModule,
+    MatListModule,
+    MatSidenavModule,
+    FlexLayoutModule,
   ],
   exports: [
     MatFormFieldModule,FormsModule, ReactiveFormsModule,
     MatInputModule,
     MatCardModule,
     MatButtonModule,
-    MatIconModule
+    MatIconModule,
+    MatToolbarModule,
+    MatListModule,
+    MatSidenavModule,
+    FlexLayoutModule,
   ]
 })
 export class MaterialModule { }

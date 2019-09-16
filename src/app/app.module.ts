@@ -6,16 +6,12 @@ import { AppComponent } from './app.component';
 import { MaterialModule } from './material/material.module';
 import { UsermanagementModule } from './usermanagement/usermanagement.module';
 import { DashboardModule } from './dashboard/dashboard.module';
-import { MainNavComponent } from './main-nav/main-nav.component';
 import { LayoutModule } from '@angular/cdk/layout';
-import { MatToolbarModule } from '@angular/material/toolbar';
-import { MatButtonModule } from '@angular/material/button';
-import { MatSidenavModule } from '@angular/material/sidenav';
-import { MatIconModule } from '@angular/material/icon';
-import { MatListModule } from '@angular/material/list';
+import { SharedModule } from './shared/shared.module';
+import { DevicesModule } from './devices/devices.module';
 
 @NgModule({
-  declarations: [AppComponent, MainNavComponent],
+  declarations: [AppComponent],
   imports: [
     BrowserModule,
     BrowserAnimationsModule,
@@ -24,12 +20,10 @@ import { MatListModule } from '@angular/material/list';
     UsermanagementModule,
     DashboardModule,
     LayoutModule,
-    MatToolbarModule,
-    MatButtonModule,
-    MatSidenavModule,
-    MatIconModule,
-    MatListModule,
+    SharedModule,
+    DevicesModule,
   ],
+  exports:[],
   providers: [],
   bootstrap: [AppComponent]
 })
